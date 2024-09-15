@@ -21,7 +21,7 @@ export default function Home() {
         />
         <div className="absolute inset-0 flex justify-center items-center">
           <h1 className="text-9xl font-bold text-center px-32 -mt-60">
-            Let's create something great together.
+            Let&apos;s create something great together.
           </h1>
         </div>
       </div>
@@ -53,7 +53,7 @@ export default function Home() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {teamMembers.map((member) => (
-            <div className="flex flex-col items-center bg-white rounded-lg shadow-xl overflow-hidden transform scale-90 hover:scale-100 transition-transform duration-200">
+            <div key={member.name} className="flex flex-col items-center bg-white rounded-lg shadow-xl overflow-hidden transform scale-90 hover:scale-100 transition-transform duration-200">
               <div
                 className={`w-full h-auto flex justify-center items-center p-6`}
               >
@@ -98,7 +98,7 @@ export default function Home() {
         {/* Sağ Taraftaki Form */}
         <div className="w-full md:w-1/2 pr-20">
           <h2 className="text-5xl font-bold mb-8 text-right pl-96">
-            We'd love to hear from you
+            We&apos;d love to hear from you
           </h2>
           <form className="space-y-4">
             <div>
